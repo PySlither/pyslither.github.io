@@ -1,0 +1,184 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "What is Slither?\n\n\nSlither is a Python module that uses PyGame to bring Scratch-like features to Python.\n\nScratch\n is a programming language developed by MIT that uses block-based scripts to introduce kids to programming.\n\n\nWhy use Slither?\n\n\nThose just getting started with Python after using Scratch may want to go straight from one GUI to another. Slither allows those people to quickly make simple projects in a matter of minutes, while also learning Python.\n\n\nHow do I install Slither?\n\n\nThrough pip\n\n\nRun \npip install slither\n.\n\n\nManually\n\n\nRun \npython setup.py build\n and then \npython setup.py install\n.\n\nIf that doesn't work, run \npython setup.py bdist_wheel\n, and then run \npip install path\n, where path is the final path of the .whl file (which should be in dist/). If this fails, install wheel with \npip install wheel\n then retry.\n\nIf it still fails, make sure you have \nsetuptools\n fully updated and properly installed.\n\nRemember to add \nimport slither\n in your script.\n\n\nSlither supports both Python 2 and Python 3. Also, note that you must have PyGame installed in order to use Slither.\n\n\nUh-oh! There's a problem!\n\n\nFirst, check to make sure you've properly installed all of Slither's requirements and Slither.\n\nNext, check your Python program over. Do you have correct syntax and spelling?\n\nFinally, check to see if you have the newest version of Slither.\n\n\nIf you've done all three of those things and it still doesn't work, file an issue.\n\n\nHow can I help with Slither?\n\n\nCheck the issues to see what problems need fixing. Then make a pull request detailing what you've changed and how it should help. After testing, someone will merge it into the main project.\n\nIf you help enough times, Tymewalk will add you as a collaborator.\n\n\nWARNING: Abuse of collaborator permissions WILL result in you being removed as a collaborator.\n\nSo just be careful with what you do and you'll be fine.\n\n\nCredits\n\n\nScratch is property of The Lifelong Kindergarten Group. The Slither devs are not affiliated with the LLK, nor do they own Scratch.",
+            "title": "Home"
+        },
+        {
+            "location": "/#what-is-slither",
+            "text": "Slither is a Python module that uses PyGame to bring Scratch-like features to Python. Scratch  is a programming language developed by MIT that uses block-based scripts to introduce kids to programming.",
+            "title": "What is Slither?"
+        },
+        {
+            "location": "/#why-use-slither",
+            "text": "Those just getting started with Python after using Scratch may want to go straight from one GUI to another. Slither allows those people to quickly make simple projects in a matter of minutes, while also learning Python.",
+            "title": "Why use Slither?"
+        },
+        {
+            "location": "/#how-do-i-install-slither",
+            "text": "",
+            "title": "How do I install Slither?"
+        },
+        {
+            "location": "/#through-pip",
+            "text": "Run  pip install slither .",
+            "title": "Through pip"
+        },
+        {
+            "location": "/#manually",
+            "text": "Run  python setup.py build  and then  python setup.py install . \nIf that doesn't work, run  python setup.py bdist_wheel , and then run  pip install path , where path is the final path of the .whl file (which should be in dist/). If this fails, install wheel with  pip install wheel  then retry. \nIf it still fails, make sure you have  setuptools  fully updated and properly installed. \nRemember to add  import slither  in your script.  Slither supports both Python 2 and Python 3. Also, note that you must have PyGame installed in order to use Slither.",
+            "title": "Manually"
+        },
+        {
+            "location": "/#uh-oh-theres-a-problem",
+            "text": "First, check to make sure you've properly installed all of Slither's requirements and Slither. \nNext, check your Python program over. Do you have correct syntax and spelling? \nFinally, check to see if you have the newest version of Slither.  If you've done all three of those things and it still doesn't work, file an issue.",
+            "title": "Uh-oh! There's a problem!"
+        },
+        {
+            "location": "/#how-can-i-help-with-slither",
+            "text": "Check the issues to see what problems need fixing. Then make a pull request detailing what you've changed and how it should help. After testing, someone will merge it into the main project. \nIf you help enough times, Tymewalk will add you as a collaborator.  WARNING: Abuse of collaborator permissions WILL result in you being removed as a collaborator. \nSo just be careful with what you do and you'll be fine.",
+            "title": "How can I help with Slither?"
+        },
+        {
+            "location": "/#credits",
+            "text": "Scratch is property of The Lifelong Kindergarten Group. The Slither devs are not affiliated with the LLK, nor do they own Scratch.",
+            "title": "Credits"
+        },
+        {
+            "location": "/reference/",
+            "text": "Reference\n\n\nfunction \nkeysDown()\n\n\nReturns a list of the currently held down keys\n\n\nclass \nMouse\n\n\nA class for getting and setting mouse properties\nThis is a static class, all methods should be called directly through the class\n\n\nfunction \nMouse.buttonsPressed()\n\n\nReturns a three-tuple of bools that give the state of the left, middle, and right buttons\n\n\nfunction \nMouse.isFocused()\n\n\nReturns \nTrue\n if the mouse is focused on the slither window\n\n\nfunction \nMouse.isVisible()\n\n\nReturns \nTrue\n if the mouse is visable\n\n\nfunction \nMouse.leftPressed()\n\n\nReturns \nTrue\n if the left mouse button is pressed\n\n\nfunction \nMouse.middlePressed()\n\n\nReturns \nTrue\n if the middle mouse button is pressed\n\n\nfunction \nMouse.pos()\n\n\nReturns the position of the mouse as an \n(x, y)\n tuple\n\n\nfunction \nMouse.relativeMovement()\n\n\nReturns the reletive movement of the mouse since the last call to this function as a \n(x, y)\n tuple\n\n\nfunction \nMouse.rightPressed()\n\n\nReturns \nTrue\n if the right mouse button is pressed\n\n\nfunction \nMouse.setPos(x, y)\n\n\nSets the position of the mouse pointer to \n(x, y)\n\n\nfunction \nMouse.setVisible(visable)\n\n\nSets the visibility of the mouse\n\n\nfunction \nMouse.setXPos(x)\n\n\nSets the x position of the mouse\n\n\nfunction \nMouse.setYPos()y\n\n\nSets the y position of the mouse\n\n\nfunction \nMouse.xPos()\n\n\nGets the x position of the mouse\n\n\nfunction \nMouse.yPos()\n\n\nGets the x position of the mouse\n\n\nclass \nStage\n\n\nThe stage class is the base class of all the sprites. It has one concrete instance, \nslitherStage\n\n\ndata \ncostumes\n\n\nA \ncollections.OrderedDict\n of costumes\n\n\ndata \nbgColor\n\n\nA \n(red, green, blue)\n tuple used as the background color of the stage\n\n\nfunction \naddCostume(costumePath, costumeName)\n\n\nLoads a costume from the path \ncostumePath\n and gives it the name \ncostumeName\n\n\nfunction \ndeleteCostumeByName(name)\n\n\nDeletes the costume with the name \nname\n\n\nfunction \ndeleteCostumeByNumber(n)\n\n\nDeletes the costume numbered \nn\n\n\nproperty \ncostumeNumber\n\n\nThe costume number of the current costume. Assigning \nn\n to this switches to costume \nn % len(self.costumes)\n\n\nproperty \ncostumeName\n\n\nThe name of the current costume. Assigning to this switches to the costume with that name\n\n\nslitherStage\n\n\nAn instance of Stage. Manipulate this to change the stage used in slither programs",
+            "title": "Reference"
+        },
+        {
+            "location": "/reference/#reference",
+            "text": "",
+            "title": "Reference"
+        },
+        {
+            "location": "/reference/#function-keysdown",
+            "text": "Returns a list of the currently held down keys",
+            "title": "function keysDown()"
+        },
+        {
+            "location": "/reference/#class-mouse",
+            "text": "A class for getting and setting mouse properties\nThis is a static class, all methods should be called directly through the class",
+            "title": "class Mouse"
+        },
+        {
+            "location": "/reference/#function-mousebuttonspressed",
+            "text": "Returns a three-tuple of bools that give the state of the left, middle, and right buttons",
+            "title": "function Mouse.buttonsPressed()"
+        },
+        {
+            "location": "/reference/#function-mouseisfocused",
+            "text": "Returns  True  if the mouse is focused on the slither window",
+            "title": "function Mouse.isFocused()"
+        },
+        {
+            "location": "/reference/#function-mouseisvisible",
+            "text": "Returns  True  if the mouse is visable",
+            "title": "function Mouse.isVisible()"
+        },
+        {
+            "location": "/reference/#function-mouseleftpressed",
+            "text": "Returns  True  if the left mouse button is pressed",
+            "title": "function Mouse.leftPressed()"
+        },
+        {
+            "location": "/reference/#function-mousemiddlepressed",
+            "text": "Returns  True  if the middle mouse button is pressed",
+            "title": "function Mouse.middlePressed()"
+        },
+        {
+            "location": "/reference/#function-mousepos",
+            "text": "Returns the position of the mouse as an  (x, y)  tuple",
+            "title": "function Mouse.pos()"
+        },
+        {
+            "location": "/reference/#function-mouserelativemovement",
+            "text": "Returns the reletive movement of the mouse since the last call to this function as a  (x, y)  tuple",
+            "title": "function Mouse.relativeMovement()"
+        },
+        {
+            "location": "/reference/#function-mouserightpressed",
+            "text": "Returns  True  if the right mouse button is pressed",
+            "title": "function Mouse.rightPressed()"
+        },
+        {
+            "location": "/reference/#function-mousesetposx-y",
+            "text": "Sets the position of the mouse pointer to  (x, y)",
+            "title": "function Mouse.setPos(x, y)"
+        },
+        {
+            "location": "/reference/#function-mousesetvisiblevisable",
+            "text": "Sets the visibility of the mouse",
+            "title": "function Mouse.setVisible(visable)"
+        },
+        {
+            "location": "/reference/#function-mousesetxposx",
+            "text": "Sets the x position of the mouse",
+            "title": "function Mouse.setXPos(x)"
+        },
+        {
+            "location": "/reference/#function-mousesetyposy",
+            "text": "Sets the y position of the mouse",
+            "title": "function Mouse.setYPos()y"
+        },
+        {
+            "location": "/reference/#function-mousexpos",
+            "text": "Gets the x position of the mouse",
+            "title": "function Mouse.xPos()"
+        },
+        {
+            "location": "/reference/#function-mouseypos",
+            "text": "Gets the x position of the mouse",
+            "title": "function Mouse.yPos()"
+        },
+        {
+            "location": "/reference/#class-stage",
+            "text": "The stage class is the base class of all the sprites. It has one concrete instance,  slitherStage",
+            "title": "class Stage"
+        },
+        {
+            "location": "/reference/#data-costumes",
+            "text": "A  collections.OrderedDict  of costumes",
+            "title": "data costumes"
+        },
+        {
+            "location": "/reference/#data-bgcolor",
+            "text": "A  (red, green, blue)  tuple used as the background color of the stage",
+            "title": "data bgColor"
+        },
+        {
+            "location": "/reference/#function-addcostumecostumepath-costumename",
+            "text": "Loads a costume from the path  costumePath  and gives it the name  costumeName",
+            "title": "function addCostume(costumePath, costumeName)"
+        },
+        {
+            "location": "/reference/#function-deletecostumebynamename",
+            "text": "Deletes the costume with the name  name",
+            "title": "function deleteCostumeByName(name)"
+        },
+        {
+            "location": "/reference/#function-deletecostumebynumbern",
+            "text": "Deletes the costume numbered  n",
+            "title": "function deleteCostumeByNumber(n)"
+        },
+        {
+            "location": "/reference/#property-costumenumber",
+            "text": "The costume number of the current costume. Assigning  n  to this switches to costume  n % len(self.costumes)",
+            "title": "property costumeNumber"
+        },
+        {
+            "location": "/reference/#property-costumename",
+            "text": "The name of the current costume. Assigning to this switches to the costume with that name",
+            "title": "property costumeName"
+        },
+        {
+            "location": "/reference/#slitherstage",
+            "text": "An instance of Stage. Manipulate this to change the stage used in slither programs",
+            "title": "slitherStage"
+        }
+    ]
+}
